@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4 - Frameset Layout</title>
+</head>
+
+<!-- Frameset divides the page into top (30%) and bottom (70%) frames -->
+<frameset rows="30%,70%">
+    <!-- Top frame for navigation -->
+    <frame src="navigation.html" name="topFrame" title="Navigation Frame">
+    
+    <!-- Bottom frame for welcome message -->
+    <frame src="welcome.html" name="bottomFrame" title="Welcome Frame">
+    
+    <!-- Fallback for browsers that don't support frames -->
+    <noframes>
+        <body>
+            <p>Your browser does not support frames. Please upgrade to a modern browser.</p>
+        </body>
+    </noframes>
+</frameset>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2 - Google Map Embed</title>
+</head>
+<body>
+    <!-- Question 2: Google Map with lazy loading -->
+    <h1>Google Map - Delhi, India</h1>
+    
+    <!-- 
+        The loading="lazy" attribute tells the browser to defer loading the iframe
+        until it's needed (when user scrolls near it). This improves page performance
+        by not loading the map immediately when the page loads.
+    -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.95!2d77.08!3d28.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1234567890"
+        title="Google Map showing Delhi, India"
+        width="600" 
+        height="450" 
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+    
+    <p>This map shows Delhi, India with lazy loading enabled for better performance.</p>
+</body>
+</html>
