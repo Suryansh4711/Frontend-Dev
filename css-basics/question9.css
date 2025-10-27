@@ -1,0 +1,204 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f9f9f9; /* Background color for the page */
+}
+
+/* Newspaper container with padding */
+.newspaper-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem; /* Padding around main content area */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+/* Newspaper header */
+.newspaper-header {
+    text-align: center;
+    border-bottom: 3px solid #333;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.newspaper-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.newspaper-date {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Article section */
+.newspaper-article {
+    margin-bottom: 2rem;
+}
+
+/* Main headline spanning all columns */
+.main-headline {
+    column-span: all; /* Spans across all columns */
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1rem;
+}
+
+/* Article meta information */
+.article-meta {
+    column-span: all; /* Spans across all columns */
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f7fafc;
+    border-left: 4px solid #3182ce;
+}
+
+.article-meta p {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+/* Article content with three columns */
+.article-content {
+    column-count: 3; /* Creates three vertical columns */
+    column-gap: 2rem; /* Gap between columns */
+    column-rule: 1px solid #e2e8f0; /* Adds divider lines between columns */
+    text-align: justify; /* Justified text for newspaper look */
+}
+
+/* Image styling with float */
+.article-image {
+    width: 100%; /* Full width of the column */
+    height: auto;
+    margin: 0 0 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    float: left; /* Float image to the left */
+    shape-outside: margin-box; /* Text wraps around image */
+}
+
+/* Paragraph styling */
+.article-content p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-indent: 1.5rem; /* Traditional newspaper paragraph indent */
+}
+
+/* First paragraph special styling */
+.article-content p:first-of-type {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-indent: 0; /* No indent for first paragraph */
+}
+
+/* Drop cap for first letter of first paragraph */
+.article-content p:first-of-type::first-letter {
+    float: left;
+    font-size: 4rem;
+    line-height: 3rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    font-weight: bold;
+    color: #3182ce;
+}
+
+/* Footer */
+.newspaper-footer {
+    border-top: 2px solid #333;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive design - adjust columns for smaller screens */
+@media (max-width: 768px) {
+    .newspaper-container {
+        padding: 2rem 1rem;
+    }
+    
+    .newspaper-title {
+        font-size: 2.5rem;
+    }
+    
+    .main-headline {
+        font-size: 1.8rem;
+    }
+    
+    .article-content {
+        column-count: 2; /* Two columns on tablets */
+        column-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newspaper-container {
+        padding: 1rem;
+    }
+    
+    .newspaper-title {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    
+    .main-headline {
+        font-size: 1.5rem;
+    }
+    
+    .article-content {
+        column-count: 1; /* Single column on mobile */
+        column-gap: 0;
+        column-rule: none;
+    }
+    
+    .article-image {
+        max-width: 100%;
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+    
+    .article-content p:first-of-type::first-letter {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* Print styles for better printing */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .newspaper-container {
+        box-shadow: none;
+        padding: 1rem;
+    }
+    
+    .article-content {
+        column-count: 3;
+        column-gap: 1.5rem;
+    }
+}

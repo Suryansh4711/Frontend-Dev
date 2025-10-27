@@ -1,0 +1,159 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Using rem unit */
+}
+
+/* Fixed header styling */
+.header {
+    position: fixed; /* Fixed positioning to stay at top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1e293b;
+    color: white;
+    z-index: 1000;
+    padding: 1rem 0; /* Using rem unit */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem; /* Using rem unit */
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.nav {
+    display: flex;
+    gap: 2em; /* Using em unit */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em; /* Using em unit */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #334155;
+    color: #60a5fa;
+}
+
+/* Main content area */
+.main {
+    flex: 1; /* Flexbox to push footer to bottom */
+    margin-top: 80px; /* Using px unit - compensate for fixed header */
+}
+
+.hero {
+    padding: 4rem 0; /* Using rem unit */
+    background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%);
+    min-height: 60vh; /* Using vh unit */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem; /* Using rem unit */
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    width: 200px; /* Using px unit */
+    height: 200px; /* Using px unit */
+    border-radius: 50%;
+    border: 4px solid #4f46e5; /* Using px unit */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bio {
+    flex: 1;
+    min-width: 300px; /* Using px unit */
+}
+
+.hero-title {
+    font-size: 2.5rem; /* Using rem unit */
+    color: #1e293b;
+    margin-bottom: 1.5rem; /* Using rem unit */
+    font-weight: 700;
+}
+
+.bio-text {
+    font-size: 1.1em; /* Using em unit */
+    margin-bottom: 1.5rem; /* Using rem unit */
+    color: #475569;
+    line-height: 1.7;
+}
+
+.content {
+    padding: 4rem 0; /* Using rem unit */
+}
+
+.content h2 {
+    font-size: 2rem; /* Using rem unit */
+    margin-bottom: 2rem; /* Using rem unit */
+    color: #1e293b;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.2em; /* Using em unit */
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 2rem; /* Using rem unit */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 2rem 0; /* Using rem unit */
+    margin-top: auto; /* Flexbox to push to bottom */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2rem; /* Using rem unit */
+    }
+    
+    .nav {
+        gap: 1em; /* Using em unit */
+    }
+    
+    .nav-link {
+        padding: 0.3em 0.6em; /* Using em unit */
+        font-size: 0.9rem; /* Using rem unit */
+    }
+}

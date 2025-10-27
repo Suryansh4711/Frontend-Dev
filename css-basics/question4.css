@@ -1,0 +1,171 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fafafa;
+    padding: 2rem 1rem;
+}
+
+/* Article container */
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Article header */
+.article-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 2rem;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Article meta information */
+.article-meta {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background: #ecf0f1;
+    border-radius: 8px;
+}
+
+.author {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.publication-date {
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Article body */
+.article-body {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Paragraph styling with consistent margins */
+.article-body p {
+    margin-bottom: 1.8rem; /* Consistent spacing between paragraphs */
+    text-align: justify;
+}
+
+/* First letter pseudo-element - larger font for first letter of each paragraph */
+.article-body p::first-letter {
+    font-size: 3.5em; /* Larger font size */
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin: 0.1em 0.1em 0 0;
+    color: #3498db;
+    font-family: 'Times New Roman', serif;
+}
+
+/* First line pseudo-element - bold first line of each paragraph */
+.article-body p::first-line {
+    font-weight: bold; /* Bold first line */
+    color: #2c3e50;
+}
+
+/* Custom styling for highlighted text using mark tag */
+mark {
+    background-color: #fff3cd; /* Custom background color */
+    color: #856404;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/* Blockquote styling with left border and background */
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 2.5rem 0; /* Margin for spacing */
+    padding: 1.5rem 2rem; /* Padding inside blockquote */
+    background-color: #f8f9fa; /* Background color for emphasis */
+    border-left: 5px solid #3498db; /* Left border for emphasis */
+    border-radius: 0 8px 8px 0;
+    position: relative;
+    color: #2c3e50;
+}
+
+/* Quote marks using pseudo-elements */
+.quote::before {
+    content: '"';
+    font-size: 4rem;
+    color: #3498db;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-family: 'Times New Roman', serif;
+}
+
+.quote::after {
+    content: '"';
+    font-size: 4rem;
+    color: #3498db;
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .article {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .article-title {
+        font-size: 2rem;
+    }
+    
+    .article-body {
+        font-size: 1rem;
+    }
+    
+    .article-body p::first-letter {
+        font-size: 2.5em;
+    }
+    
+    .quote {
+        padding: 1rem 1.5rem;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+    
+    .article {
+        padding: 1.5rem 1rem;
+    }
+    
+    .article-title {
+        font-size: 1.8rem;
+    }
+}

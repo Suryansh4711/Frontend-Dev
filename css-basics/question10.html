@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Complete Layout</title>
+    <link rel="stylesheet" href="question10.css">
+</head>
+<body>
+    <!-- Sticky header with navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>TechSolutions</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section with background image -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to TechSolutions</h1>
+                <p class="hero-subtitle">Innovative technology solutions for your business</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section with two columns -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>
+                        Founded in 2015, TechSolutions has been at the forefront of digital innovation, 
+                        helping businesses transform their operations through cutting-edge technology solutions. 
+                        Our team of expert developers, designers, and consultants work together to deliver 
+                        exceptional results.
+                    </p>
+                    <p>
+                        We believe in the power of technology to solve complex business challenges and 
+                        create meaningful experiences for users. Our approach combines technical excellence 
+                        with creative thinking to deliver solutions that drive growth and success.
+                    </p>
+                    <ul class="feature-list">
+                        <li>10+ years of industry experience</li>
+                        <li>500+ successful projects delivered</li>
+                        <li>24/7 customer support</li>
+                        <li>Global presence in 15+ countries</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Team collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section with three boxes -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title white-text">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Custom web applications built with modern technologies and best practices for optimal performance and user experience.</p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Content Management Systems</li>
+                    </ul>
+                </div>
+
+                <div class="service-box highlighted">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications that engage users and drive business growth across all devices.</p>
+                    <ul>
+                        <li>iOS Development</li>
+                        <li>Android Development</li>
+                        <li>React Native Solutions</li>
+                    </ul>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and services that ensure reliability, security, and performance for your applications.</p>
+                    <ul>
+                        <li>Cloud Migration</li>
+                        <li>DevOps Services</li>
+                        <li>Infrastructure Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section with form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Address:</strong>
+                        <p>123 Tech Street, Innovation District, San Francisco, CA 94105</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <p>info@techsolutions.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Business Hours:</strong>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechSolutions. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    <link rel="stylesheet" href="question1.css">
+</head>
+<body>
+    <!-- Fixed header with navigation -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">John Doe</h1>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="https://via.placeholder.com/200x200/4f46e5/white?text=JD" alt="John Doe Profile" class="profile-image">
+                    <div class="bio">
+                        <h2 class="hero-title">Welcome to My Portfolio</h2>
+                        <p class="bio-text">
+                            Hello! I'm John Doe, a passionate web developer with 5 years of experience 
+                            creating beautiful and functional websites. I specialize in frontend 
+                            technologies and love bringing creative designs to life through code.
+                        </p>
+                        <p class="bio-text">
+                            When I'm not coding, you can find me exploring new technologies, 
+                            contributing to open source projects, or enjoying a good cup of coffee 
+                            while planning my next creative project.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional content to demonstrate scrolling -->
+        <section class="content">
+            <div class="container">
+                <h2>About My Work</h2>
+                <p>This section demonstrates the fixed header behavior when scrolling.</p>
+                <div style="height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                    Scroll to test fixed header
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer that stays at bottom -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

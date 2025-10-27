@@ -1,0 +1,254 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Pricing header */
+.pricing-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.pricing-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.pricing-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Pricing table layout using flexbox */
+.pricing-table {
+    display: flex; /* Flexbox for equal columns */
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Individual pricing card */
+.pricing-card {
+    flex: 1; /* Equal flex growth */
+    max-width: 350px;
+    min-width: 280px;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transitions */
+    border: 3px solid transparent;
+    
+    /* Ensure equal height regardless of content */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 500px;
+}
+
+/* Hover effects - enlarges box and changes background */
+.pricing-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Slight enlargement */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Basic plan styling */
+.basic:hover {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+/* Standard plan (most popular) highlighting */
+.popular {
+    border-color: #f39c12; /* Different border color for popular plan */
+    transform: scale(1.08); /* Slightly larger by default */
+}
+
+.popular:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-10px) scale(1.12);
+}
+
+/* Premium plan styling */
+.premium:hover {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+}
+
+/* Popular badge */
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f39c12;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Plan header */
+.plan-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.plan-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.pricing-card:hover .plan-name {
+    color: inherit;
+}
+
+/* Price styling */
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.period {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-left: 0.3rem;
+}
+
+.pricing-card:hover .amount {
+    color: inherit;
+}
+
+/* Features list */
+.features-list {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex-grow: 1; /* Takes remaining space to maintain equal heights */
+}
+
+.features-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ecf0f1;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.pricing-card:hover .features-list li::before {
+    color: inherit;
+}
+
+/* Call-to-action button */
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease; /* Smooth button transitions */
+    margin-top: auto; /* Pushes button to bottom */
+}
+
+.cta-button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+.pricing-card:hover .cta-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: inherit;
+    border: 2px solid currentColor;
+}
+
+.pricing-card:hover .cta-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 2rem;
+    }
+    
+    .popular {
+        transform: none; /* Remove default scaling on mobile */
+    }
+    
+    .popular:hover {
+        transform: translateY(-10px) scale(1.02);
+    }
+    
+    .pricing-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-header h1 {
+        font-size: 2rem;
+    }
+    
+    .amount {
+        font-size: 2.5rem;
+    }
+    
+    .pricing-card {
+        padding: 1.5rem;
+    }
+}

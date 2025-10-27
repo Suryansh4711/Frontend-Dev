@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="question8.css">
+</head>
+<body>
+    <!-- Fixed header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">Dashboard</h1>
+            <div class="header-actions">
+                <span class="user-name">Welcome, John Doe</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Sidebar navigation -->
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    Overview
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📈</span>
+                    Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    Users
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📋</span>
+                    Reports
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    Settings
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💬</span>
+                    Messages
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">❓</span>
+                    Help
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main content area -->
+        <main class="main-content">
+            <div class="content-header">
+                <h2>Dashboard Overview</h2>
+                <p>Monitor your business metrics and performance</p>
+            </div>
+
+            <div class="content-grid">
+                <!-- Stats Cards -->
+                <div class="content-box stats-card">
+                    <div class="card-icon">📊</div>
+                    <div class="card-content">
+                        <h3>Total Sales</h3>
+                        <p class="stat-number">$45,678</p>
+                        <span class="stat-change positive">+12.5%</span>
+                    </div>
+                </div>
+
+                <div class="content-box stats-card">
+                    <div class="card-icon">👥</div>
+                    <div class="card-content">
+                        <h3>Active Users</h3>
+                        <p class="stat-number">2,847</p>
+                        <span class="stat-change positive">+8.2%</span>
+                    </div>
+                </div>
+
+                <div class="content-box stats-card">
+                    <div class="card-icon">📈</div>
+                    <div class="card-content">
+                        <h3>Conversion Rate</h3>
+                        <p class="stat-number">3.2%</p>
+                        <span class="stat-change negative">-0.5%</span>
+                    </div>
+                </div>
+
+                <div class="content-box stats-card">
+                    <div class="card-icon">💰</div>
+                    <div class="card-content">
+                        <h3>Revenue</h3>
+                        <p class="stat-number">$128,430</p>
+                        <span class="stat-change positive">+15.7%</span>
+                    </div>
+                </div>
+
+                <!-- Larger content boxes -->
+                <div class="content-box large-box">
+                    <h3>Recent Activity</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <span class="activity-time">2 hours ago</span>
+                            <span class="activity-text">New user registration: sarah.johnson@email.com</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-time">4 hours ago</span>
+                            <span class="activity-text">Order #12345 completed successfully</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-time">6 hours ago</span>
+                            <span class="activity-text">Payment received from John Smith</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-time">8 hours ago</span>
+                            <span class="activity-text">System backup completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box large-box">
+                    <h3>Quick Actions</h3>
+                    <div class="actions-grid">
+                        <button class="action-btn">Add User</button>
+                        <button class="action-btn">Generate Report</button>
+                        <button class="action-btn">Send Message</button>
+                        <button class="action-btn">Export Data</button>
+                        <button class="action-btn">System Settings</button>
+                        <button class="action-btn">View Logs</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
