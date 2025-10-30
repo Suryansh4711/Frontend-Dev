@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box Model Visualization</h1>
+    </header>
+    
+    <main>
+        <section class="box-model-demo">
+            <h2>Default Box Sizing (content-box)</h2>
+            <div class="box-wrapper">
+                <div class="box default-box">
+                    <div class="content-layer">
+                        Content
+                        <span class="dimension">200px × 150px</span>
+                    </div>
+                </div>
+                <p class="description">
+                    <strong>Content:</strong> The actual content area (blue)<br>
+                    <strong>Padding:</strong> Space between content and border (green)<br>
+                    <strong>Border:</strong> The border around the element (orange)<br>
+                    <strong>Margin:</strong> Space outside the border (transparent with outline)
+                </p>
+            </div>
+        </section>
+        
+        <section class="box-model-demo">
+            <h2>Border-box Sizing</h2>
+            <div class="box-wrapper">
+                <div class="box border-box">
+                    <div class="content-layer">
+                        Content
+                        <span class="dimension">Total: 200px × 150px</span>
+                    </div>
+                </div>
+                <p class="description">
+                    With <code>box-sizing: border-box</code>, padding and border are included in the element's total width and height. This makes sizing more predictable and easier to work with.
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Box Model Demo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf0f1;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    /* Flexbox for centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.box-model-demo {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.box-model-demo h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Base box styling with visible layers */
+.box {
+    position: relative;
+    /* Content dimensions */
+    width: 200px;
+    height: 150px;
+}
+
+/* Default box-sizing demonstration */
+.default-box {
+    /* Content area - blue background */
+    background-color: #3498db;
+    /* Padding layer - green */
+    padding: 30px;
+    /* Border layer - orange */
+    border: 15px solid #e67e22;
+    /* Margin layer - visible via outline */
+    margin: 25px;
+    /* Outline to show margin area */
+    outline: 3px dashed #95a5a6;
+    outline-offset: 25px;
+}
+
+/* Border-box sizing demonstration */
+.border-box {
+    box-sizing: border-box;
+    /* Total dimensions including padding and border */
+    width: 200px;
+    height: 150px;
+    background-color: #2ecc71;
+    padding: 30px;
+    border: 15px solid #e74c3c;
+    margin: 25px;
+    outline: 3px dashed #95a5a6;
+    outline-offset: 25px;
+}
+
+.content-layer {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #2c3e50;
+    border-radius: 5px;
+}
+
+.dimension {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.description {
+    text-align: center;
+    line-height: 1.8;
+    color: #555;
+    max-width: 600px;
+}
+
+.description strong {
+    color: #2c3e50;
+}
+
+code {
+    background-color: #f8f9fa;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #e74c3c;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Height and Width Demonstration</h1>
+    </header>
+    
+    <main>
+        <div class="box box-px">
+            <h3>Fixed Pixels</h3>
+            <p>Width: 300px<br>Height: 200px</p>
+        </div>
+        
+        <div class="box box-percent">
+            <h3>Percentage Units</h3>
+            <p>Width: 40%<br>Min-height: 250px</p>
+            <p>This box has min-height to ensure minimum size.</p>
+        </div>
+        
+        <div class="box box-viewport">
+            <h3>Viewport Units</h3>
+            <p>Width: 25vw<br>Height: 30vh</p>
+            <p>Content that might overflow will be handled by overflow property.</p>
+            <p>More text to demonstrate overflow: hidden behavior.</p>
+        </div>
+        
+        <div class="box box-em">
+            <h3>EM Units</h3>
+            <p>Width: 20em<br>Max-width: 400px</p>
+            <p>This box uses max-width constraint and demonstrates overflow: auto.</p>
+            <p>Additional content to show scrolling behavior when needed.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 CSS Sizing Demo</p>
+    </footer>
+</body>
+</html>

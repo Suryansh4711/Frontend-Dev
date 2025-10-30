@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+main {
+    flex: 1;
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+article {
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Different font families and weights */
+.article-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #34495e;
+    margin: 30px 0 20px 0;
+}
+
+/* Pseudo-element ::first-letter for decorative first letter */
+.intro-paragraph::first-letter {
+    font-size: 72px;
+    font-weight: bold;
+    float: left;
+    line-height: 60px;
+    margin: 5px 10px 0 0;
+    color: #e74c3c;
+}
+
+/* Pseudo-element ::first-line for emphasis */
+.intro-paragraph::first-line {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8; /* Improved line height for readability */
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Custom styling for <strong> elements */
+strong {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* Custom styling for <em> elements */
+em {
+    color: #8e44ad;
+    font-style: italic;
+}
+
+/* Custom styling for <mark> elements */
+mark {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.conclusion {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+/* Flexbox container for horizontal alignment */
+.box-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Base box styling with padding demonstration */
+.box {
+    width: 220px;
+    background-color: white;
+    padding: 25px; /* Internal spacing demonstration */
+    text-align: center;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Different border styles */
+.solid-border {
+    border: 4px solid #3498db;
+    padding: 20px; /* Different padding value */
+}
+
+.dashed-border {
+    border: 4px dashed #e74c3c;
+    padding: 30px; /* Larger padding */
+}
+
+.double-border {
+    border: 6px double #2ecc71;
+    padding: 25px; /* Consistent padding */
+}
+
+.groove-border {
+    border: 6px groove #9b59b6;
+    border-radius: 15px; /* Rounded corners */
+    padding: 25px;
+}
+
+.rounded-border {
+    border: 4px solid #f39c12;
+    border-radius: 25px; /* Large border-radius */
+    padding: 25px;
+}
+
+/* Hover effects with smooth transitions */
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.solid-border:hover {
+    border-color: #2980b9;
+}
+
+.dashed-border:hover {
+    border-color: #c0392b;
+}
+
+.double-border:hover {
+    border-color: #27ae60;
+}
+
+.groove-border:hover {
+    border-color: #8e44ad;
+}
+
+.rounded-border:hover {
+    border-color: #e67e22;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

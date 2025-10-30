@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Attribute Selector: Target text input fields */
+input[type="text"] {
+    background-color: #e3f2fd;
+    border: 2px solid #2196f3;
+}
+
+/* Attribute Selector: Target email input fields */
+input[type="email"] {
+    background-color: #f3e5f5;
+    border: 2px solid #9c27b0;
+}
+
+/* Attribute Selector: Target password input fields */
+input[type="password"] {
+    background-color: #fff3e0;
+    border: 2px solid #ff9800;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Pseudo-class: Focus state */
+input:focus {
+    outline: none;
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Attribute Selector: Links starting with https */
+a[href^="https"] {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Attribute Selector: Links starting with mailto */
+a[href^="mailto"] {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.links-section ul {
+    list-style: none;
+}
+
+.links-section li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Pseudo-class: Hover effect on links */
+.links-section a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Pseudo-class: nth-child selector - style odd items */
+.demo-list li:nth-child(odd) {
+    background-color: #e8f5e9;
+}
+
+/* Pseudo-class: nth-child selector - style even items */
+.demo-list li:nth-child(even) {
+    background-color: #fff3e0;
+}
+
+.demo-list li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Pseudo-class: Hover on list items */
+.demo-list li:hover {
+    transform: translateX(10px);
+}
+
+/* Child Combinator (>): Direct children only */
+.list-section > h2 {
+    color: #8e44ad;
+}
+
+/* Adjacent Sibling Combinator (+): Element immediately after */
+.list-section h2 + ul {
+    border-top: 3px solid #3498db;
+    padding-top: 15px;
+}
+
+/* Pseudo-element: ::before - Add content before element */
+.special-paragraph::before {
+    content: "→ ";
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Pseudo-element: ::after - Add content after element */
+.special-paragraph::after {
+    content: " ←";
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pseudo-elements {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.special-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c3e50;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

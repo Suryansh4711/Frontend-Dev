@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+header {
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Flexbox container for horizontal arrangement */
+.transform-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Base styling for transformation boxes */
+.transform-box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Smooth transition for all transform effects */
+    transition: all 0.4s ease;
+}
+
+.content {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 14px;
+    color: #7f8c8d;
+    font-family: 'Courier New', monospace;
+    margin-top: 10px;
+}
+
+/* Rotate transformation on hover */
+.rotate-box:hover {
+    transform: rotate(45deg);
+    background-color: #e74c3c;
+}
+
+.rotate-box:hover .content,
+.rotate-box:hover .label {
+    color: white;
+}
+
+/* Scale transformation on hover */
+.scale-box:hover {
+    transform: scale(1.3);
+    background-color: #3498db;
+}
+
+.scale-box:hover .content,
+.scale-box:hover .label {
+    color: white;
+}
+
+/* Translate transformation on hover */
+.translate-box:hover {
+    transform: translate(20px, -20px);
+    background-color: #2ecc71;
+}
+
+.translate-box:hover .content,
+.translate-box:hover .label {
+    color: white;
+}
+
+/* Skew transformation on hover */
+.skew-box:hover {
+    transform: skew(20deg, 5deg);
+    background-color: #f39c12;
+}
+
+.skew-box:hover .content,
+.skew-box:hover .label {
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
