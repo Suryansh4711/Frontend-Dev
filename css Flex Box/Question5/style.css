@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.pricing-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 280px;
+    animation: fadeIn 0.8s ease;
+    position: relative;
+}
+
+.pricing-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.pricing-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.featured {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.featured button {
+    background-color: white;
+    color: #667eea;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pricing-card h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #667eea;
+}
+
+.featured .price {
+    color: white;
+}
+
+.price span {
+    font-size: 16px;
+    color: #999;
+}
+
+.featured .price span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.featured ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5568d3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 750px) {
+    .pricing-section {
+        flex-direction: column;
+    }
+    
+    .featured {
+        transform: scale(1);
+    }
+    
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
