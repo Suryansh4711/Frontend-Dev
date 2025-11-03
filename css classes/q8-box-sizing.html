@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="q8-box-sizing.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison Page</h1>
+        <p>Understanding the difference between content-box and border-box</p>
+    </header>
+    
+    <main>
+        <section class="comparison-container">
+            <article class="box-demo">
+                <h2>Default: content-box</h2>
+                <div class="box content-box">
+                    <p><strong>Width:</strong> 300px</p>
+                    <p><strong>Padding:</strong> 20px</p>
+                    <p><strong>Border:</strong> 5px</p>
+                    <p><strong>Total Width:</strong> 350px</p>
+                    <p class="calculation">(300 + 40 + 10 = 350px)</p>
+                </div>
+                <div class="explanation">
+                    <h3>How it works:</h3>
+                    <p>With <code>box-sizing: content-box</code> (default), the width and height only apply to the content. Padding and border are added outside, increasing the total size.</p>
+                </div>
+            </article>
+
+            <article class="box-demo">
+                <h2>Modern: border-box</h2>
+                <div class="box border-box">
+                    <p><strong>Width:</strong> 300px</p>
+                    <p><strong>Padding:</strong> 20px</p>
+                    <p><strong>Border:</strong> 5px</p>
+                    <p><strong>Total Width:</strong> 300px</p>
+                    <p class="calculation">(includes padding & border)</p>
+                </div>
+                <div class="explanation">
+                    <h3>How it works:</h3>
+                    <p>With <code>box-sizing: border-box</code>, the width and height include padding and border. The content area shrinks to accommodate them, keeping the total size constant.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="info-section">
+            <h2>Key Differences</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🎯 Predictability</h3>
+                    <p>border-box makes sizing more predictable and easier to calculate</p>
+                </div>
+                <div class="info-card">
+                    <h3>📐 Layout Control</h3>
+                    <p>You don't need to subtract padding and border from your width calculations</p>
+                </div>
+                <div class="info-card">
+                    <h3>✅ Best Practice</h3>
+                    <p>Most modern CSS frameworks use border-box as the default</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Box-Sizing Demo</p>
+    </footer>
+</body>
+</html>

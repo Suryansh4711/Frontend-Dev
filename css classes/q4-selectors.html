@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="q4-selectors.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice Page</h1>
+        <p>Demonstrating different types of CSS selectors</p>
+    </header>
+    
+    <main>
+        <section id="element-selector">
+            <h2>Element Selector</h2>
+            <p>This paragraph uses element selector styling.</p>
+            <p>All paragraphs will have the same base style.</p>
+        </section>
+
+        <section class="class-demo">
+            <h2>Class Selector</h2>
+            <p class="highlight">This paragraph has the "highlight" class.</p>
+            <p class="highlight">Multiple elements can share the same class.</p>
+        </section>
+
+        <section>
+            <h2>ID Selector</h2>
+            <p id="unique-para">This paragraph has a unique ID selector applied.</p>
+        </section>
+
+        <section>
+            <h2>Attribute Selector</h2>
+            <a href="https://example.com" target="_blank">External Link</a>
+            <a href="/page.html">Internal Link</a>
+            <input type="text" placeholder="Text input">
+            <input type="email" placeholder="Email input">
+        </section>
+
+        <section>
+            <h2>Combinator Selectors</h2>
+            
+            <div class="parent">
+                <h3>Child Combinator (&gt;)</h3>
+                <p>Direct child paragraph</p>
+                <div>
+                    <p>Nested paragraph (not direct child)</p>
+                </div>
+            </div>
+
+            <div class="siblings">
+                <h3>Adjacent Sibling (+)</h3>
+                <p>First paragraph after h3</p>
+                <p>Second paragraph</p>
+                <p>Third paragraph</p>
+            </div>
+
+            <div class="general-siblings">
+                <h3>General Sibling (~)</h3>
+                <p>First sibling</p>
+                <span>A span element</span>
+                <p>Second sibling paragraph</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Descendant Selector</h2>
+            <ul>
+                <li>List item 1
+                    <ul>
+                        <li>Nested item 1</li>
+                        <li>Nested item 2</li>
+                    </ul>
+                </li>
+                <li>List item 2</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSS Selectors Demo</p>
+    </footer>
+</body>
+</html>

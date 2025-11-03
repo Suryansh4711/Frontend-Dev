@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+/* Flexbox for even distribution */
+.effects-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.effect-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 200px;
+    flex: 1;
+    max-width: 300px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.effect-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.effect-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Card 1: Launch effect - scale, rotate, color */
+.card-1:hover {
+    transform: scale(1.1) translateY(-10px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+}
+
+.card-1:hover .icon {
+    transform: rotate(45deg) scale(1.2);
+}
+
+.card-1:hover h3,
+.card-1:hover p {
+    color: white;
+}
+
+/* Card 2: Shine effect - rotation and shadow */
+.card-2:hover {
+    transform: scale(1.05) rotate(5deg);
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    box-shadow: 0 15px 40px rgba(240, 147, 251, 0.6);
+}
+
+.card-2:hover .icon {
+    transform: rotate(360deg);
+}
+
+.card-2:hover h3,
+.card-2:hover p {
+    color: white;
+}
+
+/* Card 3: Paint effect - gradient shift */
+.card-3:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0 12px 35px rgba(79, 172, 254, 0.5);
+}
+
+.card-3:hover .icon {
+    transform: scale(1.3) translateY(-5px);
+}
+
+.card-3:hover h3,
+.card-3:hover p {
+    color: white;
+}
+
+/* Card 4: Charge effect - glow with bounce */
+.card-4:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    box-shadow: 0 0 30px rgba(253, 203, 110, 0.8),
+                0 0 50px rgba(253, 203, 110, 0.5);
+}
+
+.card-4:hover .icon {
+    animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.card-4:hover h3,
+.card-4:hover p {
+    color: #333;
+}
+
+/* Card 5: Sparkle effect - multiple transforms */
+.card-5:hover {
+    transform: scale(1.15) rotate(-5deg);
+    background: linear-gradient(135deg, #a8e6cf 0%, #56ab2f 100%);
+    box-shadow: 0 20px 50px rgba(86, 171, 47, 0.6);
+}
+
+.card-5:hover .icon {
+    transform: scale(1.4) rotate(180deg);
+    animation: sparkle 0.8s ease-in-out;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; transform: scale(1.6) rotate(180deg); }
+}
+
+.card-5:hover h3,
+.card-5:hover p {
+    color: white;
+}
+
+/* Card 6: Ignite effect - intense shadow and color */
+.card-6:hover {
+    transform: scale(1.12) translateY(-15px);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.7),
+                0 0 60px rgba(238, 90, 111, 0.4);
+}
+
+.card-6:hover .icon {
+    transform: scale(1.3);
+    animation: pulse 0.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1.3); }
+    50% { transform: scale(1.5); }
+}
+
+.card-6:hover h3,
+.card-6:hover p {
+    color: white;
+}
+
+/* Button effects section */
+.button-effects {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.button-effects h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.effect-btn {
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.effect-btn-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.effect-btn-1:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.effect-btn-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+}
+
+.effect-btn-2:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(245, 87, 108, 0.5);
+}
+
+.effect-btn-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.effect-btn-3:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 30px rgba(79, 172, 254, 0.6);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
