@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="responsive-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>📊 Dashboard</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#filters">Filters</a>
+                <a href="#typography">Typography</a>
+                <a href="#media">Media Queries</a>
+            </nav>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#filters">🎨 CSS Filters</a></li>
+                <li><a href="#typography">📝 Typography</a></li>
+                <li><a href="#media">📱 Media Queries</a></li>
+                <li><a href="#cheatsheet">📚 Cheat Sheet</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2>Responsive CSS Components</h2>
+            
+            <div class="card-grid">
+                <!-- Filters Card -->
+                <article id="filters" class="dashboard-card">
+                    <div class="card-header">
+                        <span class="card-icon">🎨</span>
+                        <h3>CSS Filters</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Apply visual effects like blur, grayscale, brightness, and more to transform elements.</p>
+                        <ul>
+                            <li>blur()</li>
+                            <li>grayscale()</li>
+                            <li>brightness()</li>
+                            <li>contrast()</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Typography Card -->
+                <article id="typography" class="dashboard-card">
+                    <div class="card-header">
+                        <span class="card-icon">📝</span>
+                        <h3>Typography</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Use clamp() for fluid typography that scales smoothly across all screen sizes.</p>
+                        <code>font-size: clamp(1rem, 2vw, 1.5rem);</code>
+                    </div>
+                </article>
+
+                <!-- Media Queries Card -->
+                <article id="media" class="dashboard-card">
+                    <div class="card-header">
+                        <span class="card-icon">📱</span>
+                        <h3>Media Queries</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Define breakpoints to create responsive layouts that adapt to different devices.</p>
+                        <code>@media (max-width: 768px) { ... }</code>
+                    </div>
+                </article>
+
+                <!-- Cheat Sheet Links Card -->
+                <article id="cheatsheet" class="dashboard-card">
+                    <div class="card-header">
+                        <span class="card-icon">📚</span>
+                        <h3>Cheat Sheet</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Quick reference for responsive CSS properties and techniques.</p>
+                        <ul>
+                            <li>Flexbox Properties</li>
+                            <li>Grid Layout</li>
+                            <li>Responsive Units</li>
+                            <li>Transform & Transition</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

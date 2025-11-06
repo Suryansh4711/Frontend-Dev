@@ -1,0 +1,187 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #434343 0%, #000000 100%);
+    min-height: 100vh;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* Main Container */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Comparison Container - Desktop: Side by Side */
+.comparison-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Comparison Item */
+.comparison-item {
+    flex: 1;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.comparison-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Wrapper */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+/* Image Label Badge */
+.image-label {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Original Image - No Filter */
+.original-image {
+    filter: none;
+}
+
+/* Filtered Image - Brightness */
+.filtered-image {
+    filter: brightness(1.5);
+}
+
+/* Filtered Image - Contrast */
+.filtered-image.contrast {
+    filter: contrast(200%);
+}
+
+/* Remove Filter on Hover with Smooth Transition */
+.comparison-item:hover .filtered-image {
+    filter: none;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Caption Styles */
+.caption {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #ddd;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+}
+
+/* Responsive Design - Below 700px: Stack Vertically */
+@media (max-width: 700px) {
+    /* Stack images vertically */
+    .comparison-container {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .comparison-item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .image-wrapper img {
+        height: 300px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .comparison-container {
+        margin-bottom: 2rem;
+    }
+
+    .image-wrapper img {
+        height: 250px;
+    }
+
+    .caption {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1.5rem 0.5rem;
+    }
+}

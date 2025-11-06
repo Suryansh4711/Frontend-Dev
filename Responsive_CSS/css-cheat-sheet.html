@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="css-cheat-sheet.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive CSS Cheat Sheet</h1>
+        <p>Quick reference guide for responsive design concepts</p>
+    </header>
+
+    <main>
+        <section class="cheat-sheet-grid">
+            <article class="topic-box">
+                <h2>CSS Filters</h2>
+                <div class="content">
+                    <p class="description">Apply visual effects to elements</p>
+                    <code>
+                        filter: blur(5px);<br>
+                        filter: grayscale(100%);<br>
+                        filter: brightness(150%);<br>
+                        filter: contrast(200%);
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Media Queries</h2>
+                <div class="content">
+                    <p class="description">Apply styles based on screen size</p>
+                    <code>
+                        @media (max-width: 768px) {<br>
+                        &nbsp;&nbsp;.container {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Responsive Design</h2>
+                <div class="content">
+                    <p class="description">Create layouts that adapt to any screen</p>
+                    <code>
+                        display: flex;<br>
+                        flex-wrap: wrap;<br>
+                        grid-template-columns:<br>
+                        &nbsp;&nbsp;repeat(auto-fit, minmax(200px, 1fr));
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Typography</h2>
+                <div class="content">
+                    <p class="description">Fluid font sizes with clamp()</p>
+                    <code>
+                        font-size: clamp(1rem, 2vw, 1.5rem);<br>
+                        line-height: 1.6;<br>
+                        letter-spacing: 0.05em;
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Flexbox Layout</h2>
+                <div class="content">
+                    <p class="description">One-dimensional flexible layouts</p>
+                    <code>
+                        display: flex;<br>
+                        justify-content: space-between;<br>
+                        align-items: center;<br>
+                        gap: 1rem;
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Grid Layout</h2>
+                <div class="content">
+                    <p class="description">Two-dimensional grid-based layouts</p>
+                    <code>
+                        display: grid;<br>
+                        grid-template-columns: repeat(3, 1fr);<br>
+                        grid-gap: 2rem;<br>
+                        grid-auto-rows: minmax(100px, auto);
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Transitions</h2>
+                <div class="content">
+                    <p class="description">Smooth property changes over time</p>
+                    <code>
+                        transition: all 0.3s ease;<br>
+                        transition-property: transform;<br>
+                        transition-duration: 0.5s;
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Transforms</h2>
+                <div class="content">
+                    <p class="description">Modify element position and appearance</p>
+                    <code>
+                        transform: translateY(-10px);<br>
+                        transform: scale(1.1);<br>
+                        transform: rotate(45deg);
+                    </code>
+                </div>
+            </article>
+
+            <article class="topic-box">
+                <h2>Animations</h2>
+                <div class="content">
+                    <p class="description">Create keyframe-based animations</p>
+                    <code>
+                        @keyframes fadeIn {<br>
+                        &nbsp;&nbsp;from { opacity: 0; }<br>
+                        &nbsp;&nbsp;to { opacity: 1; }<br>
+                        }<br>
+                        animation: fadeIn 1s ease-in;
+                    </code>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Responsive CSS Cheat Sheet</p>
+    </footer>
+</body>
+</html>

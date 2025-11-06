@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles</title>
+    <link rel="stylesheet" href="design-principles.css">
+</head>
+<body>
+    <header>
+        <h1>Core Principles of Responsive Design</h1>
+        <p>Essential concepts for building adaptive websites</p>
+    </header>
+
+    <main>
+        <section class="principles-grid">
+            <article class="principle-box">
+                <div class="icon">📐</div>
+                <h2>Fluid Layouts</h2>
+                <div class="definition">
+                    <p>
+                        Fluid layouts use relative units like percentages and viewport units instead of
+                        fixed pixel values. This allows content to adapt smoothly to different screen
+                        sizes, creating a flexible foundation for responsive design.
+                    </p>
+                </div>
+                <div class="code-example">
+                    <h3>CSS Example:</h3>
+                    <code>
+                        .container {<br>
+                        &nbsp;&nbsp;width: 90%;<br>
+                        &nbsp;&nbsp;max-width: 1200px;<br>
+                        &nbsp;&nbsp;margin: 0 auto;<br>
+                        }
+                    </code>
+                </div>
+            </article>
+
+            <article class="principle-box">
+                <div class="icon">🖼️</div>
+                <h2>Flexible Media</h2>
+                <div class="definition">
+                    <p>
+                        Images, videos, and other media should scale proportionally within their containers.
+                        Using max-width: 100% ensures media never exceeds container boundaries while
+                        maintaining aspect ratios across all devices.
+                    </p>
+                </div>
+                <div class="code-example">
+                    <h3>CSS Example:</h3>
+                    <code>
+                        img, video {<br>
+                        &nbsp;&nbsp;max-width: 100%;<br>
+                        &nbsp;&nbsp;height: auto;<br>
+                        &nbsp;&nbsp;display: block;<br>
+                        }
+                    </code>
+                </div>
+            </article>
+
+            <article class="principle-box">
+                <div class="icon">📱</div>
+                <h2>Breakpoints</h2>
+                <div class="definition">
+                    <p>
+                        Breakpoints are specific viewport widths where the layout changes to accommodate
+                        different screen sizes. Media queries allow you to apply different styles at these
+                        breakpoints, optimizing the design for various devices.
+                    </p>
+                </div>
+                <div class="code-example">
+                    <h3>CSS Example:</h3>
+                    <code>
+                        @media (max-width: 768px) {<br>
+                        &nbsp;&nbsp;.grid {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </code>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Responsive Design Principles</p>
+    </footer>
+</body>
+</html>

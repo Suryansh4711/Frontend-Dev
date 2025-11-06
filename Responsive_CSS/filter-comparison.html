@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Comparison Layout</title>
+    <link rel="stylesheet" href="filter-comparison.css">
+</head>
+<body>
+    <header>
+        <h1>Before & After Filter Comparison</h1>
+        <p>Hover over the filtered images to see the original</p>
+    </header>
+
+    <main>
+        <section class="comparison-container">
+            <article class="comparison-item">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" 
+                         alt="Mountain landscape original" 
+                         class="original-image">
+                    <div class="image-label">Original</div>
+                </div>
+                <p class="caption">Original Image - Natural Colors</p>
+            </article>
+
+            <article class="comparison-item">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" 
+                         alt="Mountain landscape filtered" 
+                         class="filtered-image">
+                    <div class="image-label">Filtered</div>
+                </div>
+                <p class="caption">Brightness Enhanced - Hover to Remove</p>
+            </article>
+        </section>
+
+        <section class="comparison-container">
+            <article class="comparison-item">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=600" 
+                         alt="Desert sunset original" 
+                         class="original-image">
+                    <div class="image-label">Original</div>
+                </div>
+                <p class="caption">Original Image - Natural Tones</p>
+            </article>
+
+            <article class="comparison-item">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=600" 
+                         alt="Desert sunset filtered" 
+                         class="filtered-image contrast">
+                    <div class="image-label">Filtered</div>
+                </div>
+                <p class="caption">Contrast Increased - Hover to Remove</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Filter Comparison Demo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #232526, #414345);
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Main Container */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Cheat Sheet Grid - Large screens: 2-3 columns */
+.cheat-sheet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+/* Topic Box Styles */
+.topic-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-box:hover {
+    transform: translateY(-5px);
+    background: rgba(102, 126, 234, 0.2);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    border-color: #667eea;
+}
+
+.topic-box h2 {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description {
+    color: #ccc;
+    font-size: 0.95rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Code Block Styles */
+code {
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #a8dadc;
+    border-left: 3px solid #667eea;
+    overflow-x: auto;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #ccc;
+    margin-top: 2rem;
+}
+
+/* Responsive Design - Below 700px: Single column with key-value format */
+@media (max-width: 700px) {
+    .cheat-sheet-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Make boxes appear as stacked rows */
+    .topic-box {
+        padding: 1.25rem;
+    }
+
+    .topic-box h2 {
+        font-size: 1.3rem;
+    }
+
+    code {
+        font-size: 0.85rem;
+        padding: 0.875rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .topic-box h2 {
+        font-size: 1.2rem;
+    }
+
+    code {
+        font-size: 0.8rem;
+    }
+}

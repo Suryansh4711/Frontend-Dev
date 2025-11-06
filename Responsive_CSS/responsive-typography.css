@@ -1,0 +1,118 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: bold;
+}
+
+/* Main Content Area */
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section */
+.content {
+    padding: 1rem;
+}
+
+/* Main Heading with clamp() */
+.main-heading {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    line-height: 1.2;
+}
+
+.main-heading:first-child {
+    margin-top: 0;
+}
+
+/* Main Paragraph with clamp() */
+.main-paragraph {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
+/* Responsive Design - Below 700px */
+@media (max-width: 700px) {
+    /* Adjust line-height for better readability on mobile */
+    .main-heading {
+        line-height: 1.3;
+        margin-bottom: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .main-paragraph {
+        line-height: 2;
+        text-align: left;
+    }
+
+    /* Adjust spacing for mobile */
+    main {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .content {
+        padding: 0.5rem;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Extra small devices - Below 500px */
+@media (max-width: 500px) {
+    main {
+        margin: 1rem 0.5rem;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .main-paragraph {
+        line-height: 2.2;
+    }
+}
