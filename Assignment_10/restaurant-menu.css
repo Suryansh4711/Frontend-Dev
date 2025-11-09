@@ -1,34 +1,22 @@
-/* Custom styles for Restaurant Menu */
-
-/* List group item hover effect */
 .list-group-item-action:hover {
     background-color: #f8f9fa;
     border-left: 4px solid #ffc107;
     transition: all 0.3s ease;
 }
-
-/* Table row hover effect */
 .table-hover tbody tr:hover {
     background-color: #fff3cd !important;
     cursor: pointer;
 }
-
-/* Badge styling */
 .badge {
     font-size: 0.75rem;
     padding: 0.35em 0.65em;
 }
-
-/* Featured image hover effect */
 figure img {
     transition: transform 0.3s ease;
 }
-
 figure:hover img {
     transform: scale(1.02);
 }
-
-/* Table header styling */
 .table-dark th {
     background-color: #212529 !important;
 }

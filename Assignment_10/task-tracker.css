@@ -1,19 +1,12 @@
-/* Custom styles for Task Tracker */
-
-/* List item hover effect */
 .list-group-item-action:hover {
     background-color: #f8f9fa;
     border-left: 4px solid #0d6efd;
     transition: all 0.3s ease;
 }
-
-/* Badge styling */
 .badge {
     font-size: 0.75rem;
     padding: 0.5em 0.75em;
 }
-
-/* Button badge contrast */
 .btn .badge {
     font-size: 0.875rem;
 }

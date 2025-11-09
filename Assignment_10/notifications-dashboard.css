@@ -1,21 +1,14 @@
-/* Custom styles for Notifications Dashboard */
-
-/* Alert hover effect */
 .alert {
     transition: all 0.3s ease;
     border-left-width: 4px;
 }
-
 .alert:hover {
     transform: translateX(5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-/* Summary box hover effect */
 .bg-light.rounded {
     transition: all 0.3s ease;
 }
-
 .bg-light.rounded:hover {
     transform: scale(1.05);
     background-color: #e9ecef !important;

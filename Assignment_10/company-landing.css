@@ -1,44 +1,30 @@
-/* Custom styles for Company Landing Page */
-
-/* Hero section with gradient background */
 .hero-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 500px;
     display: flex;
     align-items: center;
 }
-
-/* Feature icon styling */
 .feature-icon {
     width: 80px;
     height: 80px;
     font-size: 2rem;
 }
-
-/* Smooth transitions for interactive elements */
 .btn {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
-/* Navbar brand hover effect */
 .navbar-brand {
     transition: color 0.3s ease;
 }
-
 .navbar-brand:hover {
     color: #667eea !important;
 }
-
-/* Feature box hover effect */
 .col-md-4 > div {
     transition: transform 0.3s ease;
 }
-
 .col-md-4 > div:hover {
     transform: translateY(-5px);
 }

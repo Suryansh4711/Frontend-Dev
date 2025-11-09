@@ -1,31 +1,21 @@
-/* Custom styles for Blog Pagination */
-
-/* Card hover effect */
 .card {
     transition: all 0.3s ease;
     border: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
-
-/* Pagination hover effect */
 .page-link {
     transition: all 0.3s ease;
 }
-
 .page-link:hover {
     transform: scale(1.1);
 }
-
-/* Button group spacing */
 .btn-group .btn {
     transition: all 0.3s ease;
 }
-
 .btn-group .btn:hover {
     transform: scale(1.05);
 }
