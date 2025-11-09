@@ -1,0 +1,56 @@
+/* Custom styles for Product Catalog */
+
+/* Product card hover effects */
+.product-card {
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    /* .shadow-lg: Large shadow applied on hover */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Card image styling */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Button hover effect */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Price styling */
+.h4.text-primary {
+    transition: color 0.3s ease;
+}
+
+.product-card:hover .h4.text-primary {
+    color: #0d6efd !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-img-top {
+        height: 200px;
+    }
+}

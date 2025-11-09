@@ -1,0 +1,45 @@
+/* Custom styles for Pricing Plans */
+
+/* Header gradient */
+.bg-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Pricing card hover effects */
+.pricing-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    /* .shadow-lg applied on hover */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Pricing amount styling */
+.pricing-price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.bg-primary .pricing-price {
+    color: white;
+}
+
+/* Button hover effect */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Pro plan special styling */
+.bg-primary.pricing-card {
+    border: 3px solid #ffd700;
+}
