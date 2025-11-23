@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Q5 - Image Gallery Modal</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="q5_image_gallery.js"></script>
+  <style>
+    .grid{ display:flex; flex-wrap:wrap; gap:8px }
+    .grid img{ width:120px; height:80px; object-fit:cover; cursor:pointer }
+    .modal{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.6); }
+    .modal img{ max-width:80%; max-height:80% }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
