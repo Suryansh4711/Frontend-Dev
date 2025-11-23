@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body{font-family:Arial, sans-serif;padding:16px}
+    ul.products{display:flex;flex-wrap:wrap;gap:12px;padding:0;list-style:none}
+    ul.products li{width:180px;border:1px solid #ddd;padding:8px;position:relative}
+    .highlight{outline:3px solid #ff0}
+    .fav.selected{color:red}
+    .details{display:none;background:#f9f9f9;padding:6px;margin-top:6px}
+    .discount { background: linear-gradient(90deg,#fffbe6,#e6fff2); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Product Highlight</h1>
+    <ul class="products" id="productList">
+      <!-- 6 sample products with data attributes (price, discount, stock) -->
+      <li data-price="1200" data-discount="10" data-stock="5">
+        <h3 class="title">Wireless Headphones</h3>
+        <div class="price">₹1200</div>
+        <div class="fav" style="cursor:pointer">♡ Favorite</div>
+        <div class="details">Battery life: 20h</div>
+      </li>
+      <li data-price="550" data-stock="0">
+        <h3 class="title">Ceramic Mug</h3>
+        <div class="price">₹550</div>
+        <div class="fav" style="cursor:pointer">♡ Favorite</div>
+        <div class="details">Dishwasher safe</div>
+      </li>
+      <li data-price="4500" data-discount="15" data-stock="3">
+        <h3 class="title">Smart Watch Pro</h3>
+        <div class="price">₹4500</div>
+        <div class="fav" style="cursor:pointer">♡ Favorite</div>
+        <div class="details">Heart-rate monitor</div>
+      </li>
+      <li data-price="199" data-stock="12">
+        <h3 class="title">Notebook</h3>
+        <div class="price">₹199</div>
+        <div class="fav" style="cursor:pointer">♡ Favorite</div>
+        <div class="details">100 pages</div>
+      </li>
+      <li data-price="2500" data-discount="5" data-stock="0">
+        <h3 class="title">Bluetooth Speaker</h3>
+        <div class="price">₹2500</div>
+        <div class="fav" style="cursor:pointer">♡ Favorite</div>
+        <div class="details">Water resistant</div>
+      </li>
+      <li data-price="1299" data-stock="8">
+        <h3 class="title">Gaming Mouse</h3>
+        <div class="price">₹1299</div>
+        <div class="fav" style="cursor:pointer">♡ Favorite</div>
+        <div class="details">RGB lighting</div>
+      </li>
+    </ul>
+  </main>
+
+  <script src="q2_product_highlight.js"></script>
+</body>
+</html>
