@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Q1 - Live Product Search</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="q1_live_search.js"></script>
+  <style>
+    .result{ display:flex; gap:8px; align-items:center; padding:6px; border-bottom:1px solid #eee }
+    .img{ width:60px; height:40px; object-fit:cover }
+    #loading{ display:none }
+  </style>
+</head>
+<body>
+  <h2>Live Product Search</h2>
+  <input id="q" placeholder="Search products..." autocomplete="off" /> <span id="loading">Loading...</span>
+  <div id="results"></div>
+</body>
+</html>

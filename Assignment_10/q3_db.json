@@ -1,0 +1,9 @@
+{
+  "tasks": [
+    { "id": 1, "title": "Write report", "priority": "High", "completed": false },
+    { "id": 2, "title": "Team meeting", "priority": "Medium", "completed": true },
+    { "id": 3, "title": "Fix bug #423", "priority": "High", "completed": false },
+    { "id": 4, "title": "Refactor module", "priority": "Low", "completed": false },
+    { "id": 5, "title": "Design review", "priority": "Medium", "completed": true }
+  ]
+}

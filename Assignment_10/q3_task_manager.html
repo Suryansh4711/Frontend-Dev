@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Q3 - Task Manager</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="q3_task_manager.js"></script>
+  <style>
+    .task{ padding:6px; border-bottom:1px solid #eee; display:flex; gap:12px; align-items:center }
+  </style>
+</head>
+<body>
+  <h2>Task Manager</h2>
+  <label>Filter: <select id="filter"><option value="">All</option><option value="Low">Low Priority</option><option value="Medium">Medium Priority</option><option value="High">High Priority</option><option value="completed">Completed</option></select></label>
+  <div id="list"></div>
+</body>
+</html>

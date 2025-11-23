@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Q4 - Multi-API Dashboard</title>
+  <script defer src="q4_multi_api_dashboard.js"></script>
+  <style>
+    .card{ display:inline-block; width:140px; height:70px; border:1px solid #ddd; margin:8px; padding:8px; vertical-align:top }
+    .skeleton{ background:#eee; height:20px; margin:6px 0 }
+    .warn{ color:orange }
+  </style>
+</head>
+<body>
+  <h2>Dashboard</h2>
+  <div id="warn"></div>
+  <div id="dash"><div class="card" id="users"><div class="skeleton"></div></div><div class="card" id="orders"><div class="skeleton"></div></div><div class="card" id="products"><div class="skeleton"></div></div></div>
+</body>
+</html>
