@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Movie Database</title>
+  <!-- Question 14: Movie Database table with border, caption, colspan, title and a small note -->
+</head>
+<body>
+  <header>
+    <h1>My Movie Database</h1>
+  </header>
+
+  <main>
+    <table border="1" title="Table listing movies with ratings and links">
+      <caption>Top Movies Collection</caption>
+      <thead>
+        <tr>
+          <th>Movie Name</th>
+          <th>Genre</th>
+          <th>Year</th>
+          <th>IMDB Rating</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Shawshank Redemption</td>
+          <td>Drama</td>
+          <td>1994</td>
+          <td>9.3</td>
+          <td><a href="https://www.imdb.com/title/tt0111161/">IMDB</a></td>
+        </tr>
+        <tr>
+          <td>Inception</td>
+          <td>Sci-Fi</td>
+          <td>2010</td>
+          <td>8.8</td>
+          <td><a href="https://www.imdb.com/title/tt1375666/">IMDB</a></td>
+        </tr>
+        <tr>
+          <td>Parasite</td>
+          <td>Thriller</td>
+          <td>2019</td>
+          <td>8.6</td>
+          <td><a href="https://www.imdb.com/title/tt6751668/">IMDB</a></td>
+        </tr>
+        <!-- Example of using colspan to add a remark row spanning multiple columns -->
+        <tr>
+          <td colspan="5" title="Note about ratings">Note: Ratings are from IMDB and reflect scores at time of capture.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><small>Listed movies are examples for the assignment. For full details visit the IMDB links above.</small></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Movie Collector</p>
+  </footer>
+</body>
+</html>

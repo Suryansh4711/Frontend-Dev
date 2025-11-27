@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Conference Schedule</title>
+  <!-- Question 7: Conference Schedule page using semantic tags and a table -->
+</head>
+<body>
+  <header>
+    <h1>Annual Web Development Conference 2025</h1>
+    <p>Schedule Overview</p>
+  </header>
+
+  <nav>
+    <!-- Quick links for sessions -->
+    <a href="#morning">Morning</a> | <a href="#afternoon">Afternoon</a> | <a href="#evening">Evening</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2 id="schedule">Conference Schedule</h2>
+
+      <table border="1" title="Conference schedule table">
+        <caption>Sessions and Speakers</caption>
+        <thead>
+          <tr>
+            <th>Session</th>
+            <th>Time</th>
+            <th>Topic</th>
+            <th>Speaker</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="morning">
+            <td>Morning</td>
+            <td>09:00 - 11:00</td>
+            <td>Modern HTML & Accessibility</td>
+            <td>Dr. Aisha Khan</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Afternoon</td>
+            <td>12:00 - 13:00</td>
+            <td>Designing for Performance</td>
+            <td>Leo Martínez</td>
+          </tr>
+          <tr id="afternoon">
+            <td>14:00 - 16:00</td>
+            <td>Progressive Web Apps</td>
+            <td>Rina Patel</td>
+          </tr>
+
+          <tr id="evening">
+            <td>Evening</td>
+            <td>17:00 - 19:00</td>
+            <td>Future of Frontend Tooling</td>
+            <td>Prof. James Li</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Note: All times are local. Networking coffee is available between sessions.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebDev Conference Committee</p>
+  </footer>
+</body>
+</html>

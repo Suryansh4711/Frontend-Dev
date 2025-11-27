@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dropdown Selection Page</title>
+  <!-- Question 10: Multiple dropdowns with pre-selected options and a summary paragraph -->
+</head>
+<body>
+  <header>
+    <h1>Location & Favorite Place Selector</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Select Your Preferences</legend>
+
+        <!-- Country dropdown with a pre-selected option -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="usa">United States</option>
+          <option value="japan" selected>Japan</option>
+          <option value="canada">Canada</option>
+        </select>
+        <br>
+
+        <!-- State dropdown with pre-selected option -->
+        <label for="state">State/Region:</label>
+        <select id="state" name="state">
+          <option value="kyoto" selected>Kyoto Prefecture</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="osaka">Osaka</option>
+        </select>
+        <br>
+
+        <!-- City dropdown with pre-selected option -->
+        <label for="city">City:</label>
+        <select id="city" name="city">
+          <option value="kyoto-city" selected>Kyoto City</option>
+          <option value="arashiyama">Arashiyama</option>
+          <option value="nara">Nara</option>
+        </select>
+        <br>
+
+        <!-- Favorite tourist place dropdown with pre-selected option -->
+        <label for="place">Favorite Tourist Place:</label>
+        <select id="place" name="place">
+          <option value="fushimi">Fushimi Inari Shrine</option>
+          <option value="kinkaku" selected>Kinkaku-ji (Golden Pavilion)</option>
+          <option value="gion">Gion District</option>
+        </select>
+      </fieldset>
+    </form>
+
+    <p>Summary: I selected Japan → Kyoto Prefecture → Kyoto City and my favorite place is Kinkaku-ji (Golden Pavilion).</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Selector Demo</p>
+  </footer>
+</body>
+</html>
