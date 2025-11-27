@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: white;
+      width: 350px;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 26px;
+      color: #333;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .login-btn {
+      width: 100%;
+      background: #1877f2;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background: #166fe0;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      console.log("jQuery is successfully loaded!");
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="login-box">
+    <h2>Login Form</h2>
+
+    <form id="myFormId">
+      <label for="email">Email address</label>
+      <input type="text" id="email" class="input-field" placeholder="Email address" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" class="input-field" placeholder="Password" />
+
+      <button class="login-btn">Log in</button>
+    </form>
+  </div>
+  <script>
+    function getData() {
+    // let email = document.getElementById('email').value;
+    // let password = document.getElementById('password').value;
+    let email = $('#email').val();
+    let password = $('#password').val();
+
+    console.log("Email: " + email + " Password: " + password);
+
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    let passwordPattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+
+    if (email === "" || password === "") {
+        alert("Please fill all the fields");
+
+    } else if (!email.includes("@")) {
+        alert("Please enter a valid email");
+
+    } else if (!emailPattern.test(email)) {
+        alert("Please enter a valid email");
+
+    } else if (!passwordPattern.test(password)) {
+        alert("Password must be 7-15 characters long and include at least one numeric digit and a special character");
+
+    } else {
+        login(email, password);
+    }
+}
+function login(email, password) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:3000/login&quot");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onload = function () {
+        console.log("Response:", JSON.parse(xhr.responseText));
+    };
+    const body = {
+        email: email,
+        password: password,
+    };
+    xhr.send(JSON.stringify(body));
+}
+// const xhr = new XMLHttpRequest();
+// xhr.open("GET", "http://localhost:3000/login&quot;);
+// xhr.onload = function() {
+// if (xhr.status === 200) {
+// const data = JSON.parse(xhr.responseText);
+// console.log("Received:", data);
+// }
+// };
+// xhr.send();
+  </script>
+</body>
+</html>

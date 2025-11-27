@@ -1,0 +1,19 @@
+{ 
+    "students": [
+        {
+          "name": "Ram Updated",
+          "score": 95,
+          "id": "1"
+        },
+        {
+          "id": "2",
+          "name": "Shyam",
+          "score": 92
+        },
+        {
+          "id": "029a",
+          "name": "Aman",
+          "score": 78
+        }
+    ]
+}
